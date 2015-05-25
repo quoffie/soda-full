@@ -1,0 +1,207 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  dbee.admin.inc: n/a
+#  dbee.module: n/a
+#  dbee.info: n/a
+#  dbee.install: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-06-12 21:49+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: dbee.admin.inc:21
+msgid "DataBase Email Encryption module"
+msgstr ""
+
+#: dbee.admin.inc:22
+msgid "All email addresses are encrypted now"
+msgstr ""
+
+#: dbee.admin.inc:32;72
+msgid "Allow to loggin using email address"
+msgstr ""
+
+#: dbee.admin.inc:37
+msgid "This feature is handled by the %module module."
+msgstr ""
+
+#: dbee.admin.inc:37
+msgid "LoginToboggan"
+msgstr ""
+
+#: dbee.admin.inc:37
+msgid "Email Registration"
+msgstr ""
+
+#: dbee.admin.inc:40
+msgid "Enable this feature only if you meet performance troubles on the user search."
+msgstr ""
+
+#: dbee.admin.inc:41
+msgid "Thoses performance troubles may occures on one specific situation :"
+msgstr ""
+
+#: dbee.admin.inc:43
+msgid "<a href=\"@url\">Searching a user</a>,"
+msgstr ""
+
+#: dbee.admin.inc:44
+msgid "by a connected user granted with the 'administer users' permission,"
+msgstr ""
+
+#: dbee.admin.inc:45
+msgid "on a site with a lot of register users."
+msgstr ""
+
+#: dbee.admin.inc:47
+msgid "As a limitation, only completed emails will be finded. As an example, on site storing a user with the 'john@example.com' mail value, if this checkbox is checked, searching this user using the key word 'hn@examp' will fail but the whole email address search key 'john@example.com' will succeed. In both cases, the result will be returned very fast."
+msgstr ""
+
+#: dbee.admin.inc:50;75
+msgid "Disable searching users via uncompleted email address."
+msgstr ""
+
+#: dbee.admin.inc:60
+msgid "Save"
+msgstr ""
+
+#: dbee.admin.inc:72;75
+msgid "The '%setting' setting is not valid"
+msgstr ""
+
+#: dbee.admin.inc:86
+msgid "New setting has been saved"
+msgstr ""
+
+#: dbee.module:18
+msgid "Administer database email encryption"
+msgstr ""
+
+#: dbee.module:19
+msgid "Configure options for the 'database email encryption' module"
+msgstr ""
+
+#: dbee.module:232;237
+msgid "All users email addresses have been %crypted (concerning @updated_users of @total_users users)"
+msgstr ""
+
+#: dbee.module:233;238
+msgid "encrypted"
+msgstr ""
+
+#: dbee.module:233;238
+msgid "decrypted"
+msgstr ""
+
+#: dbee.module:311
+msgid "No email address registered for %name."
+msgstr ""
+
+#: dbee.module:316
+msgid "The %name's email address is encrypted."
+msgstr ""
+
+#: dbee.module:319
+msgid "The %name's email address is encrypted but corrupted. Sending email will be a failure."
+msgstr ""
+
+#: dbee.module:323
+msgid "The %name's email address is not encrypted."
+msgstr ""
+
+#: dbee.module:328 dbee.info:0
+msgid "Security"
+msgstr ""
+
+#: dbee.module:332
+msgid "Contact email"
+msgstr ""
+
+#: dbee.module:386
+msgid "The name %name is already taken."
+msgstr ""
+
+#: dbee.module:403
+msgid "The e-mail address %email is already taken."
+msgstr ""
+
+#: dbee.module:406
+msgid "The e-mail address %email is already registered. <a href=\"@password\">Have you forgotten your password?</a>"
+msgstr ""
+
+#: dbee.module:420
+msgid "The signature is too long: it must be %max characters or less."
+msgstr ""
+
+#: dbee.module:434
+msgid "DataBase Email Encryption module enabled"
+msgstr ""
+
+#: dbee.module:440
+msgid "Encryption is enabled now. Check AES encryption method on the <a href=\"@url\">AES settings page</a>"
+msgstr ""
+
+#: dbee.module:443
+msgid "The <a href=\"@url\" title=\"More information on the AES setting page\">AES password feature</a> has been disabled"
+msgstr ""
+
+#: dbee.module:458
+msgid "DataBase Email Encryption module disabled. Encryption is disabled now."
+msgstr ""
+
+#: dbee.module:632
+msgid "username or mail:"
+msgstr ""
+
+#: dbee.module:706
+msgid "You should disable this feature (uncheck 'Create AES passwords')"
+msgstr ""
+
+#: dbee.module:706
+msgid "It is not recommanded to enable it"
+msgstr ""
+
+#: dbee.module:708
+msgid "Warning from the <em>Database Email Encryption</em> module : the AES <strong>passwords feature</strong> is not fonctionnal, it may be responsible of errors on creating or editing users. @disable_message."
+msgstr ""
+
+#: dbee.module:805
+msgid "This name has already been taken by another user."
+msgstr ""
+
+#: dbee.module:812
+msgid "This e-mail has already been taken by another user."
+msgstr ""
+
+#: dbee.module:237
+msgid "dbee"
+msgstr ""
+
+#: dbee.module:32
+msgid "DataBase Email Encryption settings"
+msgstr ""
+
+#: dbee.install:43
+msgid "Module install: Attempt to recreate field: \"@field\", when it already exists."
+msgstr ""
+
+#: dbee.info:0
+msgid "DataBase Email Encryption"
+msgstr ""
+
+#: dbee.info:0
+msgid "Encrypt user email addresses stored into the core database for security reasons. This module doesn't alter user experience"
+msgstr ""
+

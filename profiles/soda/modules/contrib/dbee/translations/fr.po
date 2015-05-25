@@ -1,0 +1,247 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright 2012 julien duteil <julienledut@gmail.com>
+# Generated from files:
+#  dbee.admin.inc: n/a
+#  dbee.module: n/a
+#  dbee.info: n/a
+#  dbee.install: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: dbee7.x-2.0\n"
+"POT-Creation-Date: 2013-06-12 21:56+0000\n"
+"PO-Revision-Date: 2013-06-12 21:56+0000\n"
+"Last-Translator: julien duteil <julienledut@gmail.com>\n"
+"Language-Team: French <julienledut@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: dbee.admin.inc:21
+msgid "DataBase Email Encryption module"
+msgstr "Module DataBase Email Encryption"
+
+#: dbee.admin.inc:22
+msgid "All email addresses are encrypted now"
+msgstr "Toutes les adresses mails sont désormais cryptées"
+
+#: dbee.admin.inc:32;72
+msgid "Allow to loggin using email address"
+msgstr "Autorise à se connecter en utilisant l'adresse mail"
+
+#: dbee.admin.inc:37
+msgid "This feature is handled by the %module module."
+msgstr "Cette fonctionnalité est gérée par le module %module."
+
+#: dbee.admin.inc:37
+msgid "LoginToboggan"
+msgstr "LoginToboggan"
+
+#: dbee.admin.inc:37
+msgid "Email Registration"
+msgstr "Email Registration"
+
+#: dbee.admin.inc:40
+msgid "Enable this feature only if you meet performance troubles on the user search."
+msgstr ""
+"Activez cette fonctionnalité uniquement si vous rencontrez des "
+"problèmes de performance concernant la recherche d'utilisateur."
+
+#: dbee.admin.inc:41
+msgid "Thoses performance troubles may occures on one specific situation :"
+msgstr ""
+"Ces problèmes de performance peuvent apparaître dans une situation "
+"spécifique :"
+
+#: dbee.admin.inc:43
+msgid "<a href=\"@url\">Searching a user</a>,"
+msgstr "<a href=\"@url\">En recherchant un utilisateur</a>,"
+
+#: dbee.admin.inc:44
+msgid "by a connected user granted with the 'administer users' permission,"
+msgstr ""
+"Par un utilisateur authentifié avec la permission « Administrer les "
+"utilisateurs »,"
+
+#: dbee.admin.inc:45
+msgid "on a site with a lot of register users."
+msgstr "sur un site avec beaucoup d'utilisateurs enregistrés."
+
+#: dbee.admin.inc:47
+msgid "As a limitation, only completed emails will be finded. As an example, on site storing a user with the 'john@example.com' mail value, if this checkbox is checked, searching this user using the key word 'hn@examp' will fail but the whole email address search key 'john@example.com' will succeed. In both cases, the result will be returned very fast."
+msgstr ""
+"Comme limitation, seules les adresses mail complètes seront "
+"trouvées. Par exemple, sur un site contenant un utilisateur avec "
+"comme adresse email « john@example.com », si cette case est cochée, "
+"la recherche de cet utilisateur avec le mot clef « hn@examp » "
+"échouera tandis que la recherche avec le mot clef de l'adresse mail "
+"complète « john@example.com » réussira. Dans les deux cas, le "
+"résultat sera renvoyé très rapidement."
+
+#: dbee.admin.inc:50;75
+msgid "Disable searching users via uncompleted email address."
+msgstr ""
+"Désactiver la recherche d'utilisateurs par adresses emails "
+"incomplètes."
+
+#: dbee.admin.inc:60
+msgid "Save"
+msgstr "Enregistrer"
+
+#: dbee.admin.inc:72;75
+msgid "The '%setting' setting is not valid"
+msgstr "Le paramètre « %setting » n'est pas valide"
+
+#: dbee.admin.inc:86
+msgid "New setting has been saved"
+msgstr "Les nouveaux paramètres ont étés sauvés"
+
+#: dbee.module:18
+msgid "Administer database email encryption"
+msgstr "Administrer database email encryption"
+
+#: dbee.module:19
+msgid "Configure options for the 'database email encryption' module"
+msgstr "Configure les options pour le module « database email encryption »"
+
+#: dbee.module:232;237
+msgid "All users email addresses have been %crypted (concerning @updated_users of @total_users users)"
+msgstr ""
+"Toutes les adresses emails ont été %crypted (pour @updated_users sur "
+"@total_users utilisateurs)"
+
+#: dbee.module:233;238
+msgid "encrypted"
+msgstr "cryptées"
+
+#: dbee.module:233;238
+msgid "decrypted"
+msgstr "décryptées"
+
+#: dbee.module:311
+msgid "No email address registered for %name."
+msgstr "Pas d'adresse mail enregistrée pour l'utilisateur %name."
+
+#: dbee.module:316
+msgid "The %name's email address is encrypted."
+msgstr "L'adresse mail de %name est cryptée."
+
+#: dbee.module:319
+msgid "The %name's email address is encrypted but corrupted. Sending email will be a failure."
+msgstr ""
+"L'adresse mail de %name est cryptée mais corrompue. L'envoi de mail "
+"échouera."
+
+#: dbee.module:323
+msgid "The %name's email address is not encrypted."
+msgstr "L'adresse mail de %name n'est pas cryptée."
+
+#: dbee.module:328 dbee.info:0
+msgid "Security"
+msgstr "Sécurité"
+
+#: dbee.module:332
+msgid "Contact email"
+msgstr "Email de contact"
+
+#: dbee.module:386
+msgid "The name %name is already taken."
+msgstr "Le nom %name est déjà pris."
+
+#: dbee.module:403
+msgid "The e-mail address %email is already taken."
+msgstr "L'adresse e-mail %email est déja utilisée."
+
+#: dbee.module:406
+msgid "The e-mail address %email is already registered. <a href=\"@password\">Have you forgotten your password?</a>"
+msgstr ""
+"L'adresse électronique %email est déjà enregistrée. <a "
+"href=\"@password\">Avez-vous oublié votre mot de passe ?</a>"
+
+#: dbee.module:420
+msgid "The signature is too long: it must be %max characters or less."
+msgstr ""
+"La signature est trop longue : elle doit contenir %max caractères ou "
+"moins."
+
+#: dbee.module:434
+msgid "DataBase Email Encryption module enabled"
+msgstr "Module DataBase Email Encryption activé"
+
+#: dbee.module:440
+msgid "Encryption is enabled now. Check AES encryption method on the <a href=\"@url\">AES settings page</a>"
+msgstr ""
+"Le cryptage est désormais actif. Controlez la méthode de cryptage "
+"AES sur la <a href=\"@url\">page des paramètres AES</a>"
+
+#: dbee.module:443
+msgid "The <a href=\"@url\" title=\"More information on the AES setting page\">AES password feature</a> has been disabled"
+msgstr ""
+"Le <a href=\"@url\" title=\"Plus d'informations sur la page des "
+"paramètres de AES\">mot de passe AES</a> a été désactivé"
+
+#: dbee.module:458
+msgid "DataBase Email Encryption module disabled. Encryption is disabled now."
+msgstr ""
+"Module DataBase Email Encryption désactivé. Le cryptage est "
+"désormais désactivé."
+
+#: dbee.module:632
+msgid "username or mail:"
+msgstr "nom d'utilisateur ou email:"
+
+#: dbee.module:706
+msgid "You should disable this feature (uncheck 'Create AES passwords')"
+msgstr ""
+"Vous devriez désactiver cette fonctionnalité (décocher « Créer "
+"des mots de passe AES »)"
+
+#: dbee.module:706
+msgid "It is not recommanded to enable it"
+msgstr "Il n'est pas recommandé de l'activer"
+
+#: dbee.module:708
+msgid "Warning from the <em>Database Email Encryption</em> module : the AES <strong>passwords feature</strong> is not fonctionnal, it may be responsible of errors on creating or editing users. @disable_message."
+msgstr ""
+"Avertissement issu du module <em>Database Email Encryption</em> : la "
+"<strong>fonctionnalité de mots de passe</strong> AES n'est pas "
+"stable, elle pourrait être responsable d'erreurs lors de la création "
+"ou de la modification d'utilisateurs. @disable_message."
+
+#: dbee.module:805
+msgid "This name has already been taken by another user."
+msgstr "Ce nom est déjà été pris par un autre utilisateur."
+
+#: dbee.module:812
+msgid "This e-mail has already been taken by another user."
+msgstr "Cet email a déjà été pris par un autre utilisateur."
+
+#: dbee.module:237
+msgid "dbee"
+msgstr "dbee"
+
+#: dbee.module:32
+msgid "DataBase Email Encryption settings"
+msgstr "Paramètres de DataBase Email Encryption"
+
+#: dbee.install:43
+msgid "Module install: Attempt to recreate field: \"@field\", when it already exists."
+msgstr ""
+"Installation de module : Tente de recréer le champ :\"@field\", alors "
+"qu'il existe déjà."
+
+#: dbee.info:0
+msgid "DataBase Email Encryption"
+msgstr "DataBase Email Encryption"
+
+#: dbee.info:0
+msgid "Encrypt user email addresses stored into the core database for security reasons. This module doesn't alter user experience"
+msgstr ""
+"Crypte l'adresse email des utilisateurs au sein de la base de données "
+"pour des raisons de sécurité. Ce module de modifie pas l'utilisation "
+"du site"
+
