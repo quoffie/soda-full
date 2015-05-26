@@ -16,6 +16,9 @@ projects[admin_views][subdir] = "contrib"
 projects[fasttoggle][version] = "1.6"
 projects[fasttoggle][subdir] = "contrib"
 
+projects[strongarm][version] = "2.0"
+projects[strongarm][subdir] = "contrib"
+
 projects[module_filter][version] = "2.0"
 projects[module_filter][subdir] = "contrib"
 

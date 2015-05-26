@@ -48,6 +48,7 @@ dependencies[] = devel_generate
 dependencies[] = profiler_builder
 ; Features extra
 dependencies[] = fe_block
+dependencies[] = strongarm
 ; Feeds
 dependencies[] = feeds
 dependencies[] = feeds_tamper
@@ -72,7 +73,6 @@ dependencies[] = oauth_common_providerui
 dependencies[] = aes
 dependencies[] = auto_entitylabel
 dependencies[] = backup_migrate
-dependencies[] = blockexport
 dependencies[] = blockify
 dependencies[] = boolean_formatter
 dependencies[] = clone
@@ -123,8 +123,9 @@ dependencies[] = views_data_export
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
-dependencies[] = soda_blocks
+dependencies[] = soda_variables
 dependencies[] = soda_formats
+dependencies[] = soda_blocks
 dependencies[] = soda_node_types
 dependencies[] = soda_roles
 dependencies[] = soda_views
