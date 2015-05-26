@@ -7,8 +7,8 @@ function contentapi_menu() {
   $items = array();
 
   $items['admin/config/services/contentapi'] = array(
-    'title' => 'REST API Settings',
-    'description' => 'Customize the Datasets API.',
+    'title' => 'Content API Settings',
+    'description' => 'Customize the Content API.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('contentapi_settings'),
     'access arguments' => array('administer site configuration'),
@@ -300,7 +300,7 @@ function _contentapi_retrieve($nid, $fields = TRUE) {
     return;
   }
 
-  if (isset($fields_blacklist) && !is_array($fields_blacklist)) {
+  if (!is_array($fields_blacklist)) {
     $fields_blacklist = contentapi_load_blacklisted_fields();
   }
 
@@ -331,13 +331,13 @@ function _contentapi_retrieve($nid, $fields = TRUE) {
 
     if ($fields) {
       $lang = $raw_node->language;
-      if (isset($body) && !in_array('body', $hidden_fields))
+      if (!in_array('body', $hidden_fields))
         $node->body = $raw_node->body[$lang];
       if (!in_array('vid', $hidden_fields))
         $node->vid = $raw_node->vid;
 
       foreach ($raw_node as $key => $value) {
-        if (substr($key, 0, 6) == 'field_' && isset($fields_blacklist[$raw_node->type]) && !in_array($key, $fields_blacklist[$raw_node->type])) {
+        if (substr($key, 0, 6) == 'field_' && !in_array($key, $fields_blacklist[$raw_node->type])) {
           $value = $raw_node->$key;
           $node->fields[$key] = (isset($value[$lang])) ? $value[$lang] : $value;
         }
@@ -452,12 +452,7 @@ function _contentapi_index() {
   }
 
   // Now check type settings and only include white-listed node types
-  //dpm(variable_get('contentapi_content_types'));
-  
-  $content_types = variable_get('contentapi_content_types', '');
-  //$access_types = unserialize($content_types);
-  $access_types = $content_types;
-  
+  $access_types = unserialize(variable_get('contentapi_content_types', ''));
   if ($access_types) {
     $checked_types = array();
     foreach ($access_types as $type_name) {

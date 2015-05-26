@@ -155,7 +155,7 @@ function services_definition_endpoint($endpoint, $exclude_disabled = FALSE) {
 
             $rows[] = array(
               $argument['name'],
-              (isset($argument['type'])) ? 'no' : 'yes',
+              $argument['type'],
               (isset($argument['optional']) && $argument['optional'] == TRUE) ? 'no' : 'yes',
               $source,
               isset($argument['description']) ? $argument['description'] : '',

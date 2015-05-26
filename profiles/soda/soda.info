@@ -1,9 +1,8 @@
 ; Packaging information for soda
 name = "Soda"
 description = "S.O.D.A - Small Open DAta framework"
-exclusive = "1"
 core = "7.x"
-version = "7.x-1.0"
+version = "7.x-1.x"
 
 ; ----------
 ; Dependencies
@@ -39,6 +38,7 @@ dependencies[] = php
 dependencies[] = rdf
 dependencies[] = system
 dependencies[] = text
+dependencies[] = update
 dependencies[] = user
 ; Date/Time
 dependencies[] = date_api
@@ -72,6 +72,7 @@ dependencies[] = oauth_common_providerui
 dependencies[] = aes
 dependencies[] = auto_entitylabel
 dependencies[] = backup_migrate
+dependencies[] = blockexport
 dependencies[] = blockify
 dependencies[] = boolean_formatter
 dependencies[] = clone
@@ -123,13 +124,7 @@ dependencies[] = views_ui
 ; Features
 dependencies[] = features
 dependencies[] = soda_blocks
+dependencies[] = soda_formats
 dependencies[] = soda_node_types
+dependencies[] = soda_roles
 dependencies[] = soda_views
-
-; ----------
-; Variables
-; ----------
-variables[admin_theme] = 'adminimal'
-variables[admin_theme_admin_theme_batch] = 1
-variables[admin_theme_admin_theme_devel] = 1
-

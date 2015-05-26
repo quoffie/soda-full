@@ -1,4 +1,5 @@
 ; Soda make file for d.o. usage
+core = "7.x"
 api = "2"
 
 ; +++++ Modules +++++
@@ -172,7 +173,7 @@ projects[views_data_export][subdir] = "contrib"
 
 ; adminimal_theme
 projects[adminimal_theme][type] = "theme"
-projects[adminimal_theme][subdir] = "themes"
+projects[adminimal_theme][subdir] = "contrib"
 
 ; +++++ Libraries +++++
 
